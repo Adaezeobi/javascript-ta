@@ -1,9 +1,14 @@
 // complete the function
-function prime (num) {
-  // code goes here
+function prime(num) {
+  if (
+    (num > 1 && !Number.isInteger(num / 2) && !Number.isInteger(num / 3)) ||
+    num == 2
+  ) {
+    return true;
+  } else return false;
 }
 
-function solution (arg) {
+function solution(arg) {
   return prime(arg);
 }
 
